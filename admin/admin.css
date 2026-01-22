@@ -1,0 +1,69 @@
+/* ZAKELIJKE STYLING - Anders dan frontend */
+body {
+    font-family: Arial, sans-serif; /* Systeemfont, zakelijk */
+    background-color: #e9ecef;
+    padding: 20px;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Volledige hoogte scherm */
+}
+
+.login-box {
+    background: #fff;
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.btn-admin {
+    width: 100%;
+    padding: 10px;
+    background: #0056b3; /* Zakelijk blauw */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-header {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #0056b3;
+}
+
+/* Tabel styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th { background-color: #f1f1f1; }
+
+/* Formulier styling */
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 8px; border: 1px solid #ccc;
+}

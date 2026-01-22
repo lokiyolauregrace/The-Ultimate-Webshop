@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <h1>Dashboard Inventaris</h1>
+        <a href="../index.html" style="text-decoration: none; color: #0056b3;">Bekijk Shop ↗</a>
+    </header>
+
+    <div style="background: #fff; padding: 20px; border-radius: 5px;">
+        <div style="display:flex; justify-content:space-between; margin-bottom:20px;">
+            <input type="text" placeholder="Zoek op ID of naam..." style="padding: 8px; width: 300px;">
+            <a href="add.html" class="btn-admin" style="width: auto; text-decoration: none; display:inline-block; text-align:center;">+ Nieuw Product</a>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Productnaam</th>
+                    <th>Voorraad</th>
+                    <th>Prijs</th>
+                    <th>Acties</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#1001</td>
+                    <td>Minimalist Ring</td>
+                    <td><span style="color:green; font-weight:bold;">Op voorraad</span></td>
+                    <td>€ 89,00</td>
+                    <td><button>Bewerk</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
