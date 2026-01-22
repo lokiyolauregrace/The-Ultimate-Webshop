@@ -1,6 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&display=swap');
 
+/* Basic reset: marges en padding weghalen voor alle elementen */
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +9,11 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #FFFCF9;
+    background-color: #FFFCF9; /* Crème achtergrond */
     color: #1a1a1a;
-    height: 100vh;
+    
+    /* Zorgt ervoor dat de login box perfect in het midden staat (verticaal & horizontaal) */
+    height: 100vh; /* 100% van de kijkhoogte */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,13 +26,15 @@ body {
     justify-content: center;
 }
 
+/* De witte kaart waar het formulier in zit */
 .login-box {
     background: #fff;
     padding: 60px 40px;
     width: 100%;
-    max-width: 400px;
+    max-width: 400px; /* Niet breder dan 400px op grote schermen */
     text-align: center;
     border: 1px solid #f2f2f2;
+    /* Subtiele schaduw voor een luxe effect */
     box-shadow: 0 10px 40px rgba(0,0,0,0.02);
 }
 
@@ -40,7 +44,7 @@ body {
 }
 
 h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant Garamond', serif; /* Serif font voor luxe uitstraling */
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -53,19 +57,21 @@ h2 {
     margin-bottom: 25px;
 }
 
+/* Styling van de invulvelden */
 input {
     width: 100%;
     padding: 15px 0;
     border: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; /* Alleen een lijntje onderaan */
     background: transparent;
     font-family: 'Montserrat', sans-serif;
     outline: none;
     font-size: 0.95rem;
-    transition: 0.3s;
+    transition: 0.3s; /* Zorgt voor soepele overgang bij klikken */
     text-align: center;
 }
 
+/* Als je op het veld klikt, wordt de lijn donkerder */
 input:focus {
     border-color: #000;
 }
@@ -92,9 +98,10 @@ input::placeholder {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Hover effect voor de knop */
 .btn-admin:hover {
     background: #333;
-    letter-spacing: 3px;
+    letter-spacing: 3px; /* Letters gaan iets uit elkaar bij hover */
 }
 
 .back-link {

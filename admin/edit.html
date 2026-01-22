@@ -14,6 +14,7 @@
 
     <div class="dashboard-container">
         <form class="form-container" action="dashboard-updated.html">
+            
             <div class="form-row">
                 <label>Product Name</label>
                 <input type="text" value="ROSE PROMESSE" required>
@@ -24,6 +25,7 @@
                 <select>
                     <option selected>Rings</option>
                     <option>Necklaces</option>
+                    <option>Earrings</option>
                 </select>
             </div>
 
@@ -33,16 +35,17 @@
             </div>
 
             <div class="form-row">
-                <label>Stock Status</label>
-                <select>
-                    <option>In Stock</option>
-                    <option selected>Low Stock</option> <option>Sold Out</option>
-                </select>
+                <label>Description</label>
+                <textarea rows="4">Een belofte van pure elegantie. Deze verfijnde ring is de ultieme essential.</textarea>
+            </div>
+
+            <div class="form-row checkbox-row">
+                <input type="checkbox" id="visible" checked>
+                <label for="visible" style="display:inline; margin-bottom:0;">Visible in Boutique?</label>
             </div>
 
             <div class="form-buttons">
                 <button type="submit" class="btn-save">Update Product</button>
-                <a href="dashboard.html" class="btn-cancel">Cancel</a>
             </div>
         </form>
     </div>
