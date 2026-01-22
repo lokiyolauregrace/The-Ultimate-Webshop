@@ -1,69 +1,116 @@
-/* ZAKELIJKE STYLING - Anders dan frontend */
-body {
-    font-family: Arial, sans-serif; /* Systeemfont, zakelijk */
-    background-color: #e9ecef;
-    padding: 20px;
-}
 
-.login-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Volledige hoogte scherm */
-}
-
-.login-box {
+/* Header */
+.dashboard-header {
     background: #fff;
-    padding: 40px;
-    width: 300px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.login-box input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-}
-
-.btn-admin {
-    width: 100%;
-    padding: 10px;
-    background: #0056b3; /* Zakelijk blauw */
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.admin-header {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #0056b3;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    position: fixed; 
+    top: 0; left: 0; right: 0;
+    z-index: 100;
 }
 
-/* Tabel styling */
+.header-left { display: flex; align-items: center; gap: 20px; }
+.dash-logo { height: 40px; }
+.dashboard-header h1 { font-size: 1.2rem; letter-spacing: 1px; margin: 0; }
+
+.header-right { display: flex; align-items: center; gap: 20px; font-size: 0.9rem; }
+.view-shop-btn { color: #1a1a1a; font-weight: 500; border-bottom: 1px solid #1a1a1a; }
+
+/* Layout */
+.dashboard-container {
+    padding: 120px 40px 60px 40px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Controls */
+.dashboard-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.btn-admin-small {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.btn-admin-small:hover { background: #333; }
+
+/* Tabel Styling  */
+.table-wrapper {
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.02);
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    background: #fff;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
+thead {
+    background: #fafafa;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    padding: 15px 20px;
     text-align: left;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+    font-weight: 600;
 }
 
-th { background-color: #f1f1f1; }
-
-/* Formulier styling */
-.form-group { margin-bottom: 15px; }
-.form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
-.form-group input, .form-group select, .form-group textarea {
-    width: 100%; padding: 8px; border: 1px solid #ccc;
+td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f9f9f9;
+    font-size: 0.9rem;
+    color: #333;
 }
+
+/* Status Labels */
+.status {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+.in-stock { background: #e8f5e9; color: #2e7d32; }
+.low-stock { background: #fff3e0; color: #ef6c00; }
+.out-stock { background: #ffebee; color: #c62828; }
+
+/* Actie knop */
+.action-btn {
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: #555;
+    transition: 0.3s;
+}
+.action-btn:hover { border-color: #000; color: #000; }
