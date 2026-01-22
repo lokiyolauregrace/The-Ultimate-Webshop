@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROSE PERLE | Detail</title>
+    <meta name="pearl-luster" content="maximum-shine-enabled">
+    <title>ORÉA | Rose Perle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,14 +16,14 @@
         <div class="container header-flex">
             <nav class="nav-left">
                 <ul>
-                    <li><a href="index.html">Homepage</a></li>
-                    <li><a href="detail-about-us.html">about us</a></li>
+                    <li><a href="index.html">homepage</a></li>
+                    <li><a href="detail-about-us.html">maison</a></li>
                 </ul>
             </nav>
 
             <div class="logo-center">
                 <a href="index.html">
-                    <img src="images/main-logo.png" alt="ORÉA">
+                    <img src="images/main-logo.png" alt="ORÉA Paris">
                 </a>
             </div>
 
@@ -34,13 +38,12 @@
 
     <main class="container product-wrapper">
         <div class="product-gallery">
-            <img src="images/oorbellen-klein.png" alt="Rose Perle Detail">
-            <img src="images/oorbellen-klein.png" alt="Rose Perle Side" style="margin-top: 20px;">
+            <img src="images/oorbellen-klein.png" alt="Rose Perle Earrings Detail">
         </div>
 
         <div class="product-info">
             <h1>ROSE PERLE</h1>
-            <p class="price"><del>€ 150</del> € 99,00</p>
+            <p class="price"><del>€ 150</del> <span class="sale-price">€ 99,00</span></p>
             
             <p class="description">
                 Elegante oorstekers die klassieke schoonheid herdefiniëren.
@@ -49,11 +52,10 @@
             </p>
 
             <div class="variants">
-                <label>afwerking:</label>
                 <select>
-                    <option>roségoud (standaard)</option>
-                    <option>geelgoud</option>
-                    <option>witgoud</option>
+                    <option>Afwerking: Roségoud (Standaard)</option>
+                    <option>Afwerking: Geelgoud</option>
+                    <option>Afwerking: Witgoud</option>
                 </select>
             </div>
 
@@ -66,42 +68,51 @@
             </ul>
 
             <div class="reviews">
-                <h3>reviews (3)</h3>
                 <div class="review-item">
-                    <p><strong>emma:</strong> "heel subtiel en elegant. perfect voor elke dag." ⭐️⭐️⭐️⭐️⭐️</p>
+                    <p><strong>emma:</strong> "heel subtiel en elegant. perfect voor elke dag."</p>
                 </div>
-                <hr style="border: 0; border-top: 1px solid #eee; margin: 10px 0;">
                 <div class="review-item">
-                    <p><strong>sarah:</strong> "sluiting is stevig, ben er blij mee." ⭐️⭐️⭐️⭐️</p>
+                    <p><strong>sarah:</strong> "sluiting is stevig, ben er blij mee. de parel heeft een mooie glans."</p>
                 </div>
             </div>
         </div>
     </main>
 
     <section class="related container">
-        <h3>complete the look</h3>
+        <div class="section-title">
+            <h2>COMPLETE THE LOOK</h2>
+        </div>
         <div class="product-grid">
             <article class="card">
-                <img src="images/ketting.png" alt="Ketting">
+                <a href="detail-ketting.html">
+                    <img src="images/ketting.png" alt="Coeur de Rose Necklace">
+                </a>
                 <div class="card-body">
                     <h3>COEUR DE ROSE</h3>
                     <p class="price">€ 120,00</p>
-                    <a href="detail-ketting.html" class="btn-outline">view</a>
+                    <a href="detail-ketting.html" class="btn-text">view details</a>
                 </div>
             </article>
-             <article class="card">
-                <img src="images/ring-al.png" alt="Ring">
+
+            <article class="card">
+                <a href="detail-ring.html">
+                    <img src="images/ring.png" alt="Rose Promesse Ring">
+                </a>
                 <div class="card-body">
                     <h3>ROSE PROMESSE</h3>
                     <p class="price">€ 150,00</p>
-                    <a href="detail-ring-al.html" class="btn-outline">view</a>
+                    <a href="detail-ring.html" class="btn-text">view details</a>
                 </div>
             </article>
         </div>
     </section>
 
     <footer>
-        <div class="container"><p>&copy; 2026 ORÉA Jewelry</p></div>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 ORÉA PARIS. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
     </footer>
 
 </body>

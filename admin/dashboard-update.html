@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin | Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="header-left"><h1>Inventory Management</h1></div>
+        <div class="header-right"><a href="../index.html">View Live Shop ↗</a></div>
+    </header>
+
+    <div class="dashboard-container">
+        <div style="background:#cce5ff; color:#004085; padding:15px; border-radius:4px; margin-bottom:20px; border:1px solid #b8daff;">
+            ✓ Update: Product #1001 saved successfully.
+        </div>
+
+        <div class="dashboard-controls">
+            <input type="text" placeholder="Search product..." class="search-input">
+            <a href="add.html" class="btn-add">+ Add New Product</a>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr><th>ID</th><th>Product Name</th><th>Status</th><th>Price</th><th>Action</th></tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f8f9fa;">
+                        <td>#1001</td>
+                        <td><strong>ROSE PROMESSE</strong> (Ring)</td>
+                        <td><span class="status low-stock">Low Stock</span></td> <td>€ 150,00</td>
+                        <td><a href="edit.html" class="action-btn">Edit</a></td>
+                    </tr>
+                    <tr><td>#1002</td><td>COEUR DE ROSE</td><td><span class="status low-stock">Low Stock</span></td><td>€ 120,00</td><td><a href="edit.html" class="action-btn">Edit</a></td></tr>
+                    <tr><td>#1003</td><td>ROSE PERLE</td><td><span class="status in-stock">In Stock</span></td><td>€ 99,00</td><td><a href="edit.html" class="action-btn">Edit</a></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

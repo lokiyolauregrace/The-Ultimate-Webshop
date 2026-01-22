@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ORÉA | Homepage</title>
-    
+    <meta name="luxury-level" content="over-9000-sparkles">
+    <title>ORÉA | Haute Joaillerie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
         <div class="container header-flex">
             <nav class="nav-left">
                 <ul>
-                    <li><a href="#">collection</a></li>
-                    <li><a href="detail-about-us.html">about us</a></li>
+                    <li><a href="#collection">collection</a></li>
+                    <li><a href="detail-about-us.html">maison</a></li>
                 </ul>
             </nav>
 
             <div class="logo-center">
                 <a href="index.html">
-                    <img src="images/main-logo.png" alt="ORÉA">
+                    <img src="images/main-logo.png" alt="ORÉA Paris">
                 </a>
             </div>
 
@@ -33,74 +37,85 @@
     </header>
 
     <section class="hero">
-        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>La Rose collection ORÉA</h1>
-            <p>nieuwe collectie nu online</p>
-            <a href="#shop" class="btn">shop now</a>
+            <p class="subtitle">Nouvelle Collection</p>
+            <h1>LA ROSE</h1>
+            <a href="#collection" class="btn">discover</a>
         </div>
     </section>
 
-
-
-    <main id="shop" class="container">
-        <h2>latest drops</h2>
+    <main id="collection" class="container">
+        <div class="section-title">
+            <h2>LATEST CREATIONS</h2>
+        </div>
         
         <div class="product-grid">
             
             <article class="card">
-                <span class="label">New</span>
-                <img src="images/Ring.png" alt="Ring">
+                <span class="tag">New</span>
+                <a href="detail-ring.html">
+                    <img src="images/ring.png" alt="Rose Promesse Ring">
+                </a>
                 <div class="card-body">
-                    <h3>ROSE PROMESSE </h3>
+                    <h3>ROSE PROMESSE</h3>
                     <p class="price">€ 150,00</p>
-                    <a href="detail-ring.html" class="btn-outline">view</a>
+                    <a href="detail-ring.html" class="btn-text">view details</a>
                 </div>
             </article>
 
             <article class="card">
-                <img src="images/ketting.png" alt="Ketting">
+                <a href="detail-ketting.html">
+                    <img src="images/ketting.png" alt="Coeur de Rose Necklace">
+                </a>
                 <div class="card-body">
-                    <h3> COEUR DE ROSE</h3>
+                    <h3>COEUR DE ROSE</h3>
                     <p class="price">€ 120,00</p>
-                    <a href="detail.html" class="btn-outline">view</a>
+                    <a href="detail-ketting.html" class="btn-text">view details</a>
                 </div>
             </article>
 
             <article class="card">
-                <img src="images/oorbellen-klein.png" alt="Kleine oorbellen">
+                <a href="detail-oorbellen-klein.html">
+                    <img src="images/oorbellen-klein.png" alt="Rose Perle Earrings">
+                </a>
                 <div class="card-body">
                     <h3>ROSE PERLE</h3>
-                    <p class="price"><del>€ 150</del> € 99,00</p>
-                    <a href="detail-kleine-oorbellen.html" class="btn-outline">view</a>
+                    <p class="price"><span class="sale-price">€ 99,00</span></p>
+                    <a href="detail-oorbellen-klein.html" class="btn-text">view details</a>
                 </div>
             </article>
 
              <article class="card">
-                <img src="images/oorbellen-groot.png" alt="Hangende oorbellen">
+                <span class="tag">Limited</span>
+                <a href="detail-oorbellen-groot.html">
+                    <img src="images/oorbellen-groot.png" alt="Rose Cascade Earrings">
+                </a>
                 <div class="card-body">
                     <h3>ROSE CASCADE</h3>
-                    <p class="price"><del>€ 110</del> € 99,00</p>
-                    <a href="detail-oorbellen-groot.html" class="btn-outline">view</a>
+                    <p class="price">€ 99,00</p>
+                    <a href="detail-oorbellen-groot.html" class="btn-text">view details</a>
                 </div>
             </article>
 
-
             <article class="card">
-                <img src="images/Armband.png" alt="Armband">
+                <a href="detail-armband.html">
+                    <img src="images/armband.png" alt="Rose Lien Bracelet">
+                </a>
                 <div class="card-body">
                     <h3>ROSE LIEN</h3>
                     <p class="price">€ 75,00</p>
-                    <a href="detail.html" class="btn-outline">view</a>
+                    <a href="detail-armband.html" class="btn-text">view details</a>
                 </div>
             </article>
 
             <article class="card">
-                <img src="images/horloge.png" alt="Horloge">
+                <a href="detail-horloge.html">
+                    <img src="images/horloge.png" alt="Rose Temps Watch">
+                </a>
                 <div class="card-body">
                     <h3>ROSE TEMPS</h3>
                     <p class="price">€ 299,00</p>
-                    <a href="detail.html" class="btn-outline">view</a>
+                    <a href="detail-horloge.html" class="btn-text">view details</a>
                 </div>
             </article>
 
@@ -109,7 +124,9 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 ORÉA </p>
+            <div class="footer-content">
+                <p>&copy; 2026 ORÉA PARIS. ALL RIGHTS RESERVED.</p>
+            </div>
         </div>
     </footer>
 
